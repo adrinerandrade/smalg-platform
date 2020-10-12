@@ -1,3 +1,7 @@
+[< Home](/smalg-platform)
+
+{:toc}
+
 # Criando um problema
 
 ### Exemplos
