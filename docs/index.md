@@ -1,6 +1,6 @@
 ### O que você deseja saber?
 
-* [Entendo a plataforma](/docs/concept/concept.md)
-* [Criação de problemas](/docs/problems/creating/creating.md)
-* [Execução de problemas](/docs/problems/executing/execution.md)
-* [Linguagens](/docs/languages/smalg-javascript.md)
+* [Entendo a plataforma](/smalg-platform/concept)
+* [Criação de problemas](/smalg-platform/problems/creation)
+* [Execução de problemas](/smalg-platform/problems/execution)
+* [Linguagens](/smalg-platform/languages/smalg-javascript)
