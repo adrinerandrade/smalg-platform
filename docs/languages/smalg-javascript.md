@@ -1,1 +1,3 @@
+[< Home](/smalg-platform)
+
 {:toc}

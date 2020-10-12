@@ -4,3 +4,4 @@
 * [Criação de problemas](./problems/creation)
 * [Execução de problemas](./problems/execution)
 * [Linguagens](./languages/smalg-javascript)
+* [Integração com o Github](./github-integration)
