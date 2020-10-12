@@ -1,4 +1,4 @@
-< [Voltar](../)
+< [Voltar](./../)
 
 # Entendo a plataforma
 
