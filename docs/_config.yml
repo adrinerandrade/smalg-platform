@@ -1,3 +1,4 @@
 theme: jekyll-theme-architect
-title: Documentação da Smalg Platform
+title: Smalg Platform
 description: Detalhando os conceitos da ferramenta para construção e execução de problemas.
+markdown: kramdown
