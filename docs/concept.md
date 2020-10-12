@@ -1,4 +1,4 @@
-< [Voltar](./../)
+[< Home](/smalg-platform)
 
 # Entendo a plataforma
 
