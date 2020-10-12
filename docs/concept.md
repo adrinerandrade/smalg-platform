@@ -1,3 +1,5 @@
+< [Voltar](../)
+
 # Entendo a plataforma
 
 ### O que é?
