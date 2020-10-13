@@ -4,7 +4,7 @@
 
 ### Abrindo a tela de criação de problemas
 
-No menu lateral da plataforma, clique no item "Novo problema". Caso você não esteja logado, realize o login (mais detalhes em [Integração com o Github](/smalg-platform/github-integration)).
+No menu lateral da plataforma, clique no item "Novo problema".
 
 ### Criando o seu próprio problema
 
