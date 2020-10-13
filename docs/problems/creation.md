@@ -30,4 +30,4 @@ Nesta etapa ocorre a
 
 A seguir temos os seguintes exemplos para demonstrar mais detalhadamente o processo de criação de um problema:
 
-* [Criando um problema: Lista Encadeada](/smalg-platform/problems/creation/linked-list.md)
+* [Criando um problema: Lista Encadeada](/smalg-platform/problems/creation/linked-list)
