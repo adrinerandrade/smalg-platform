@@ -40,16 +40,21 @@ Na etapa de defição do contrato, digite no campo **Nome** o seguinte valor: `L
 
 Após definir o nome, adicione os seguintes campos:
 
-* Nome: `tamanho` | Descrição: `Tamanho da lista`.
-* Nome: `noInicial` | Descrição: `Primeiro nó da lista`.
+| Nome | Descrição |
+|-|-|
+| `tamanho` | `Tamanho da lista` |
+| `noInicial` | `Primeiro nó da lista` |
+| `noFinal` | `Último nó da lista` |
 
 Após definir os campos, adicione os seguintes métodos:
 
-* Nome: `obterTamanho` | Parâmetros: \<vazio> | Descrição: `Retorna o tamanho da lista`.
-* Nome: `obter` | Parâmetros: `posicao` | Descrição: `Retorna o elemento presente na posição informada`.
-* Nome: `contem` | Parâmetros: `elemento` | Descrição: `Verifica se um elemento existe na lista`.
-* Nome: `remover` | Parâmetros: `elemento` | Descrição: `Remove um elemento da lista`.
-* Nome: `adicionar` | Parâmetros: `elemento` | Descrição: `Adiciona um elemento na lista`.
+| Nome | Parâmetros | Descrição | 
+|-|-|-|
+| `obterTamanho` | - | `Retorna o tamanho da lista` |
+| `obter` | `posicao` | `Retorna o elemento presente na posição informada` |
+| `contem` | `elemento` | `Verifica se um elemento existe na lista` |
+| `remover` | `elemento` | `Remove um elemento da lista` |
+| `adicionar` | `elemento` | `Adiciona um elemento na lista` |
 
 Concluindo esta etapa, clique em **próximo**.
 
