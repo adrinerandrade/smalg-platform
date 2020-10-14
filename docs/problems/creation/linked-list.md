@@ -63,7 +63,9 @@ Concluindo esta etapa, clique em **próximo**.
 Clique no botão **ADICIONAR CENÁRIO**. Selecione a aba criada e altere o nome do cenário para **Adicionar**. Na descrição deste cenário, cole a seguinte informação:
 
 ```
-Este cenário apenas 3 elementos na lista. Após isso, obtém o tamanho da lista e os valores para validar a ordem de inserção.
+Este cenário apenas 3 elementos na lista.
+
+Após isso, obtém o tamanho da lista e os valores para validar a ordem de inserção.
 ```
 
 Cole o seguinte código para este cenário:
@@ -82,7 +84,7 @@ const containers = context.getContainers();
 const primitives = context.getPrimitives();
 
 assertion.assertEquals(3, objects.length, 'O número de objetos deveria ser 3.');
-assertion.assertEquals(0, objects.length, 'Não podem ser utilizados containers nesse problema.');
+assertion.assertEquals(0, containers.length, 'Não podem ser utilizados containers nesse problema.');
 assertion.assertEquals(3, listaEncadeada.obterTamanho());
 
 assertion.assertEquals(primitive_1, listaEncadeada.obter(0), 'O primeiro elemento não é 1.');
