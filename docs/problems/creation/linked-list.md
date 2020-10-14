@@ -63,13 +63,98 @@ Concluindo esta etapa, clique em **próximo**.
 Clique no botão **ADICIONAR CENÁRIO**. Selecione a aba criada e altere o nome do cenário para **Adicionar**. Na descrição deste cenário, cole a seguinte informação:
 
 ```
-Este cenário apenas adiciona 3 elementos na lista.
+Este cenário apenas 3 elementos na lista. Após isso, obtém o tamanho da lista e os valores para validar a ordem de inserção.
 ```
 
 Cole o seguinte código para este cenário:
 
 ```javascript
-listaEncadeada.adicionar();
-listaEncadeada.adicionar();
-listaEncadeada.adicionar();
+const primitive_1 = context.newPrimitive(1);
+const primitive_2 = context.newPrimitive(2);
+const primitive_3 = context.newPrimitive(3);
+
+listaEncadeada.adicionar(primitive_1);
+listaEncadeada.adicionar(primitive_2);
+listaEncadeada.adicionar(primitive_3);
+
+const objects = context.getObjects();
+const containers = context.getContainers();
+const primitives = context.getPrimitives();
+
+assertion.assertEquals(3, objects.length, 'O número de objetos deveria ser 3.');
+assertion.assertEquals(0, objects.length, 'Não podem ser utilizados containers nesse problema.');
+assertion.assertEquals(3, listaEncadeada.obterTamanho());
+
+assertion.assertEquals(primitive_1, listaEncadeada.obter(0), 'O primeiro elemento não é 1.');
+assertion.assertEquals(primitive_2, listaEncadeada.obter(1), 'O segundo elemento não é 2.');
+assertion.assertEquals(primitive_3, listaEncadeada.obter(2), 'O terceiro elemento não é 3.');
+```
+
+### Solução
+
+Como solução cadastre o seguinte código:
+
+```javascript
+class ListaEncadeada {
+
+	/**
+	 * Último nó da lista
+	 */
+	noFinal;
+	/**
+	 * Primeiro nó da lista
+	 */
+	noInicial;
+	/**
+	 * Tamanho da lista
+	 */
+	tamanho;
+
+	constructor() {}
+
+	/**
+	 * Adiciona um elemento na lista
+	 */
+	adicionar(elemento) {
+		const no = context.newObject();
+		if (!this.noInicial) {
+			this.noInicial = no;
+		}
+		no.set('valor', elemento);
+		if (this.noFinal) {
+			this.noFinal.set('proximo', no);
+		}
+		this.noFinal = no;
+		this.tamanho++;
+	}
+	/**
+	 * Remove um elemento da lista
+	 */
+	remover(elemento) {
+		
+	}
+	/**
+	 * Verifica se um elemento existe na lista
+	 */
+	contem(elemento) {
+		
+	}
+	/**
+	 * Retorna o elemento presente na posição informada
+	 */
+	obter(posicao) {
+		let noAtual = this.noInicial;
+		for (let i = 0; i < this.tamanho; i++) {
+			noAtual = this.noAtual.get('proximo');
+		}
+		return noAtual.get('valor');
+	}
+	/**
+	 * Retorna o tamanho da lista
+	 */
+	obterTamanho() {
+		
+	}
+
+}
 ```
