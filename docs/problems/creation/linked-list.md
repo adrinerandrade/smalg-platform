@@ -17,11 +17,16 @@ Cole no campo **título** o seguinte valor: `Criando uma Lista Encadeada`.
 Cole no editor de texto a **descrição** com os seguintes valores:
 
 * ```
-  Uma Lista Encadeada é uma estrutura de dados linear composta por nós que apontam para o seu próximo vizinho. Para criar uma lista encadeada, basta definir um nó inicial e para cada nó existente salvar o seu sucessor. A imagem abaixo ilustra uma lista encadeada:
+  Uma Lista Encadeada é uma estrutura de dados linear composta por nós que apontam para o seu próximo vizinho.
+	Para criar uma lista encadeada, basta definir um nó inicial e para cada nó existente salvar o seu sucessor.
+	A imagem abaixo ilustra uma lista encadeada:
   ```
 * Clique no botão ![image](https://drive.google.com/u/0/uc?id=11q6igJBlbEeUYq4ay4bbzxPicPGYc_2t&export=download) disponível da barra de ferramentas do editor de texto. Cole o seguinte endereço no tooltip apresentado: `https://drive.google.com/u/0/uc?id=1LWCd7WTSEP8pER6dUEnAEj05ZcTTh_3t&export=download`.
 * ```
-  Performática para operações de adição e exclusão de elementos, a lista encadeada não se torna performática em operações de acesso direto a uma posição da lista, pois precisa percorrer todos os nós anteriores. Existem variações da lista encadeada, como a lista duplamente encadeada, na qual cada nó aponta para o seu sucessor e o seu antecessor. Neste exercício trabalharemos apenas com a lista encadeada simples.
+  Performática para operações de adição e exclusão de elementos, a lista encadeada não se torna performática em operações de acesso direto a uma posição da lista,
+	pois precisa percorrer todos os nós anteriores.
+	Existem variações da lista encadeada, como a lista duplamente encadeada, na qual cada nó aponta para o seu sucessor e o seu antecessor.
+	Neste exercício trabalharemos apenas com a lista encadeada simples.
   
   Você deverá implementar o método de adição, remoção, obtenção de um elemento, tamanho da lista e verifição se a lista contém um determinado elemento. 
   ```
@@ -85,11 +90,19 @@ const primitives = context.getPrimitives();
 
 assertion.assertEquals(3, objects.length, 'O número de objetos deveria ser 3.');
 assertion.assertEquals(0, containers.length, 'Não podem ser utilizados containers nesse problema.');
-assertion.assertEquals(3, listaEncadeada.obterTamanho());
+assertion.assertEquals(3, listaEncadeada.obterTamanho(), 'O tamanho da lista encadeada deveria ser 3.');
 
-assertion.assertEquals(primitive_1, listaEncadeada.obter(0), 'O primeiro elemento não é 1.');
-assertion.assertEquals(primitive_2, listaEncadeada.obter(1), 'O segundo elemento não é 2.');
-assertion.assertEquals(primitive_3, listaEncadeada.obter(2), 'O terceiro elemento não é 3.');
+const first_element = listaEncadeada.obter(0);
+assertion.assertEquals(primitive_1, first_element, 'O primeiro elemento não é 1.');
+context.clear(first_element);
+
+const second_element = listaEncadeada.obter(1);
+assertion.assertEquals(primitive_2, second_element, 'O segundo elemento não é 2.');
+context.clear(second_element);
+
+const third_element = listaEncadeada.obter(2);
+assertion.assertEquals(primitive_3, third_element, 'O terceiro elemento não é 3.');
+context.clear(third_element);
 ```
 
 ### Solução
@@ -112,7 +125,9 @@ class ListaEncadeada {
 	 */
 	tamanho;
 
-	constructor() {}
+	constructor() {
+		this.tamanho = 0;
+	}
 
 	/**
 	 * Adiciona um elemento na lista
@@ -146,8 +161,8 @@ class ListaEncadeada {
 	 */
 	obter(posicao) {
 		let noAtual = this.noInicial;
-		for (let i = 0; i < this.tamanho; i++) {
-			noAtual = this.noAtual.get('proximo');
+		for (let i = 0; i < posicao; i++) {
+			noAtual = noAtual.get('proximo');
 		}
 		return noAtual.get('valor');
 	}
@@ -155,7 +170,7 @@ class ListaEncadeada {
 	 * Retorna o tamanho da lista
 	 */
 	obterTamanho() {
-		
+		return this.tamanho;
 	}
 
 }
