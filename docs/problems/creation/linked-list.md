@@ -28,7 +28,7 @@ Cole no editor de texto a **descrição** com os seguintes valores:
 	Existem variações da lista encadeada, como a lista duplamente encadeada, na qual cada nó aponta para o seu sucessor e o seu antecessor.
 	Neste exercício trabalharemos apenas com a lista encadeada simples.
   
-  Você deverá implementar o método de adição, remoção, obtenção de um elemento, tamanho da lista e verifição se a lista contém um determinado elemento. 
+  Você deverá implementar o método de adição, remoção, obtenção de um elemento, tamanho da lista e verificação se a lista contém um determinado elemento. 
   ```
 
 No exemplo acima, foi primeiro contextualizado o problema, com uma explicação sobre o conteúdo e definido quais eram os objetivos da implementação. Essas etapas são interessantes para oferecer ao usuário um melhor entendimento sobre o assunto a ser abordado.
@@ -65,24 +65,18 @@ Concluindo esta etapa, clique em **próximo**.
 
 ### Cenários
 
-Clique no botão **ADICIONAR CENÁRIO**. Selecione a aba criada e altere o nome do cenário para **Adicionar**. Na descrição deste cenário, cole a seguinte informação:
+Clique no botão **ADICIONAR CENÁRIO**. Selecione a aba criada e altere o nome do cenário para **Adicionar**. Na descrição deste cenário, cole a seguinte descrição:
 
 ```
-Este cenário apenas 3 elementos na lista.
-
-Após isso, obtém o tamanho da lista e os valores para validar a ordem de inserção.
+Este cenário adiciona 3 elementos na lista: 1, 2 e 3.
 ```
 
 Cole o seguinte código para este cenário:
 
 ```javascript
-const primitive_1 = context.newPrimitive(1);
-const primitive_2 = context.newPrimitive(2);
-const primitive_3 = context.newPrimitive(3);
-
-listaEncadeada.adicionar(primitive_1);
-listaEncadeada.adicionar(primitive_2);
-listaEncadeada.adicionar(primitive_3);
+listaEncadeada.adicionar(1);
+listaEncadeada.adicionar(2);
+listaEncadeada.adicionar(3);
 
 const objects = context.getObjects();
 const containers = context.getContainers();
@@ -91,18 +85,47 @@ const primitives = context.getPrimitives();
 assertion.assertEquals(3, objects.length, 'O número de objetos deveria ser 3.');
 assertion.assertEquals(0, containers.length, 'Não podem ser utilizados containers nesse problema.');
 assertion.assertEquals(3, listaEncadeada.obterTamanho(), 'O tamanho da lista encadeada deveria ser 3.');
+```
 
-const first_element = listaEncadeada.obter(0);
-assertion.assertEquals(primitive_1, first_element, 'O primeiro elemento não é 1.');
-context.clear(first_element);
+Crie um novo cenário, chamado **Remover** e cole a seguinte descrição:
 
-const second_element = listaEncadeada.obter(1);
-assertion.assertEquals(primitive_2, second_element, 'O segundo elemento não é 2.');
-context.clear(second_element);
+```
+Este cenário realiza a inserção de 4 elementos na lista. Os números 20, 30, 40 e 50.
+Após isso, ele remove o valor 30 da lista.
 
-const third_element = listaEncadeada.obter(2);
-assertion.assertEquals(primitive_3, third_element, 'O terceiro elemento não é 3.');
-context.clear(third_element);
+Para validar o cenário ele verifica se os valores da lista são respectivamente: 20, 30 e 40.
+```
+
+Cole o seguinte código:
+
+```javascript
+listaEncadeada.adicionar(20);
+listaEncadeada.adicionar(30);
+listaEncadeada.adicionar(40);
+listaEncadeada.adicionar(50);
+
+listaEncadeada.remover(30);
+
+assertion.assertEquals(3, listaEncadeada.obterTamanho(), 'O primeiro elemento não é 1.');
+assertion.assertEquals(20, listaEncadeada.obter(0), 'O primeiro elemento não é 20.');
+assertion.assertEquals(40, listaEncadeada.obter(1), 'O segundo elemento não é 40.');
+assertion.assertEquals(50, listaEncadeada.obter(2), 'O terceiro elemento não é 50.');
+```
+
+Crie um último cenário chamado **Contém** e cole a seguinte descrição:
+
+```
+Este cenário realiza a inserção de 2 elementos na lista. Após isso, ele verifica se a lista contém o elemento 1 e então verifica se a lista possui o elemento 3 que é inexistente. 
+```
+
+Cole o seguinte código:
+
+```javascript
+listaEncadeada.adicionar(1);
+listaEncadeada.adicionar(2);
+
+assertion.assertEquals(true, listaEncadeada.contem(1), 'A lista deveria conter o elemento 1.');
+assertion.assertEquals(false, listaEncadeada.contem(3), 'A lista não deveria conter o elemento 3');
 ```
 
 ### Solução
@@ -148,13 +171,35 @@ class ListaEncadeada {
 	 * Remove um elemento da lista
 	 */
 	remover(elemento) {
-		
+		let noAnterior = null;
+		let atual = this.noInicial;
+		while (atual) {
+			const valor = atual.get('valor');
+			if (valor === elemento) {
+				noAnterior.set('proximo', atual.get('proximo'));
+				atual.set('proximo', null);
+				this.tamanho--;
+				return;
+			} else {
+				noAnterior = atual;
+				atual = this.noInicial.get('proximo');
+			}
+		}
 	}
 	/**
 	 * Verifica se um elemento existe na lista
 	 */
 	contem(elemento) {
-		
+		let atual = this.noInicial;
+		while (atual) {
+			const valor = atual.get('valor');
+			if (valor === elemento) {
+				return true;
+			} else {
+				atual = atual.get('proximo');
+			}
+		}
+		return false;
 	}
 	/**
 	 * Retorna o elemento presente na posição informada
@@ -175,3 +220,5 @@ class ListaEncadeada {
 
 }
 ```
+
+Pronto! Agora basta criar o problema para que ele seja publicado e consiga ser utilizado por outros usuários. Caso deseja conferir o exemplo de outros problemas, volte a [Home](/smalg-platform).
