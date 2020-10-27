@@ -59,7 +59,7 @@ Após definir os campos, adicione os seguintes métodos:
 | `obter` | `posicao` | `Retorna o elemento presente na posição informada` |
 | `contem` | `elemento` | `Verifica se um elemento existe na lista` |
 | `remover` | `elemento` | `Remove um elemento da lista` |
-| `adicionar` | `elemento` | `Adiciona um elemento na lista` |
+| `adicionar` | `elemento` | `Adiciona um elemento na lista.` |
 
 Concluindo esta etapa, clique em **próximo**.
 
@@ -69,6 +69,8 @@ Clique no botão **ADICIONAR CENÁRIO**. Selecione a aba criada e altere o nome 
 
 ```
 Este cenário adiciona 3 elementos na lista: 1, 2 e 3.
+
+Para fins de testes, coloque o nome do atributo do nó que possui o valor como "valor" e o atributo que aponta para o próximo nó como "próximo".
 ```
 
 Cole o seguinte código para este cenário:
@@ -94,6 +96,8 @@ Este cenário realiza a inserção de 4 elementos na lista. Os números 20, 30, 
 Após isso, ele remove o valor 30 da lista.
 
 Para validar o cenário ele verifica se os valores da lista são respectivamente: 20, 30 e 40.
+
+Para fins de testes, coloque o nome do atributo do nó que possui o valor como "valor" e o atributo que aponta para o próximo nó como "próximo".
 ```
 
 Cole o seguinte código:
@@ -106,10 +110,29 @@ listaEncadeada.adicionar(50);
 
 listaEncadeada.remover(30);
 
-assertion.assertEquals(3, listaEncadeada.obterTamanho(), 'O primeiro elemento não é 1.');
-assertion.assertEquals(20, listaEncadeada.obter(0), 'O primeiro elemento não é 20.');
-assertion.assertEquals(40, listaEncadeada.obter(1), 'O segundo elemento não é 40.');
-assertion.assertEquals(50, listaEncadeada.obter(2), 'O terceiro elemento não é 50.');
+assertion.assertEquals(3, listaEncadeada.obterTamanho(), 'O tamanho da lista deveria ser 3.');
+let objNo = listaEncadeada.noInicial.obj;
+assertion.assertEquals(20, objNo['valor'], 'O primeiro elemento não é 20.');
+objNo = objNo['proximo'].obj;
+assertion.assertEquals(40, objNo['valor'], 'O segundo elemento não é 40.');
+objNo = objNo['proximo'].obj;
+assertion.assertEquals(50, objNo['valor'], 'O terceiro elemento não é 50.');
+```
+
+Crie um novo cenário, chamado **Obter** e cole a seguinte descrição:
+
+```
+Este cenário realiza a inserção de 3 elementos na lista. Após isso ele obtém um dos elementos.
+```
+
+Cole o seguinte código:
+
+```javascript
+listaEncadeada.adicionar(20);
+listaEncadeada.adicionar(30);
+listaEncadeada.adicionar(40);
+
+assertion.assertEquals(40, listaEncadeada.obter(2), 'O valor da posição 2 deveria ser 40.');
 ```
 
 Crie um último cenário chamado **Contém** e cole a seguinte descrição:
