@@ -68,7 +68,7 @@ Concluindo esta etapa, clique em **próximo**.
 Clique no botão **ADICIONAR CENÁRIO**. Selecione a aba criada e altere o nome do cenário para **Adicionar**. Na descrição deste cenário, cole a seguinte descrição:
 
 ```
-Este cenário adiciona 3 elementos na lista: 1, 2 e 3.
+Este cenário adiciona 3 elementos na lista.
 
 Para fins de testes, coloque o nome do atributo do nó que possui o valor como "valor" e o atributo que aponta para o próximo nó como "próximo".
 ```
@@ -87,15 +87,19 @@ const primitives = context.getPrimitives();
 assertion.assertEquals(3, objects.length, 'O número de objetos deveria ser 3.');
 assertion.assertEquals(0, containers.length, 'Não podem ser utilizados containers nesse problema.');
 assertion.assertEquals(3, listaEncadeada.obterTamanho(), 'O tamanho da lista encadeada deveria ser 3.');
+
+let objNo = listaEncadeada.noInicial.obj;
+assertion.assertEquals(1, objNo['valor'], 'O primeiro elemento não é 1.');
+objNo = objNo['proximo'].obj;
+assertion.assertEquals(2, objNo['valor'], 'O segundo elemento não é 2.');
+objNo = objNo['proximo'].obj;
+assertion.assertEquals(3, objNo['valor'], 'O terceiro elemento não é 3.');
 ```
 
 Crie um novo cenário, chamado **Remover** e cole a seguinte descrição:
 
 ```
-Este cenário realiza a inserção de 4 elementos na lista. Os números 20, 30, 40 e 50.
-Após isso, ele remove o valor 30 da lista.
-
-Para validar o cenário ele verifica se os valores da lista são respectivamente: 20, 30 e 40.
+Este cenário realiza a inserção de 4 elementos na lista. Após isso ele remove um dos elementos, o número 30.
 
 Para fins de testes, coloque o nome do atributo do nó que possui o valor como "valor" e o atributo que aponta para o próximo nó como "próximo".
 ```
@@ -122,7 +126,7 @@ assertion.assertEquals(50, objNo['valor'], 'O terceiro elemento não é 50.');
 Crie um novo cenário, chamado **Obter** e cole a seguinte descrição:
 
 ```
-Este cenário realiza a inserção de 3 elementos na lista. Após isso ele obtém um dos elementos.
+Este cenário realiza a inserção de 3 elementos na lista. Após isso ele obtém o terceiro elemento da lista.
 ```
 
 Cole o seguinte código:

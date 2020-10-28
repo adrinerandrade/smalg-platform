@@ -40,10 +40,19 @@ Para codificar você utilizará a [Smalg Javascript](/smalg-platform/languages/s
 
 Nesta etapa é cadastrada a solução do problema. Ela também é importante para você validar o problema criado juntamente com seu contrato definido e seus cenários. Ela será disponibilizada para o usuário consultar, caso não esteja conseguindo concluir o problema.
 
-A classe gerada para implementação, se observada, seguirá as suas definições de contrato. A programação dela também é realizada através da [Smalg Javascript](/smalg-platform/languages/smalg-javascript). 
+A classe gerada para implementação, se observada, seguirá as suas definições de contrato. A programação dela também é realizada através da [Smalg Javascript](/smalg-platform/languages/smalg-javascript).
+
+Após 
+
+### Disponibilizando o problema
+
+O seu problema poderá ser acessado através da listagem dos problemas de um usuário a partir do Github, o que necessita autenticação no Github.
+
+Se for de sua preferência, também é possível disponibilizar o problema através de um arquivo. Para isso, acesso o repositório criado conforme consta em [Integração com o Github](/smalg-platform/github-integration) e faça o download do arquivo.
 
 ### Exemplos
 
 A seguir temos os seguintes exemplos para demonstrar mais detalhadamente o processo de criação de um problema:
 
 * [Criando um problema: Lista Encadeada](/smalg-platform/problems/creation/linked-list)
+* [Criando um problema: Lista Dinâmica (Array List)](/smalg-platform/problems/creation/array-list)

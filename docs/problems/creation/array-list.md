@@ -124,7 +124,7 @@ Crie um novo cenário, chamado **Obter** e cole a seguinte descrição:
 
 ```
 Este cenário realiza a inserção de 4 elementos na lista. 
-Após isso ele obtem um dos elementos na posição informada.
+Após isso ele obtem um dos elementos.
 ```
 
 ### Solução
