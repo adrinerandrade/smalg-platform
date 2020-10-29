@@ -117,7 +117,6 @@ assertion.assertEquals(2, containers[1].container[1], 'O segundo elemento deveri
 assertion.assertEquals(3, containers[1].container[2], 'O terceiro elemento deveria ser 3.');
 assertion.assertEquals(4, containers[1].container[3], 'O quarto elemento deveria ser 4.');
 assertion.assertEquals(6, containers[1].container[4], 'O quinto elemento deveria ser 6.');
-assertion.assertEquals(5, listaDinamica.obterTamanho(), 'O primeiro da lista deveria ser 5.');
 ```
 
 Crie um novo cenário, chamado **Obter** e cole a seguinte descrição:
@@ -125,6 +124,39 @@ Crie um novo cenário, chamado **Obter** e cole a seguinte descrição:
 ```
 Este cenário realiza a inserção de 4 elementos na lista. 
 Após isso ele obtem um dos elementos.
+```
+
+```javascript
+listaDinamica.inicializar(2);
+
+listaDinamica.adicionar(1);
+listaDinamica.adicionar(2);
+listaDinamica.adicionar(4);
+listaDinamica.adicionar(5);
+
+assertion.assertEquals(4, listaDinamica.obterTamanho(), 'O primeiro da lista deveria ser 5.');;
+assertion.assertEquals(4, listaDinamica.obtem(2), 'O terceiro elemento deveria ser 4.');
+```
+
+Crie um novo cenário, chamado **Contem** e cole a seguinte descrição:
+
+```
+Este cenário realiza a inserção de 4 elementos na lista. 
+Após isso ele obtem um dos elementos.
+```
+
+```javascript
+listaDinamica.inicializar(2);
+
+listaDinamica.adicionar(1);
+listaDinamica.adicionar(2);
+listaDinamica.adicionar(3);
+listaDinamica.adicionar(4);
+
+
+assertion.assertEquals(4, listaDinamica.obterTamanho(), 'O primeiro da lista deveria ser 5.');
+assertion.assertEquals(true, listaDinamica.contem(2), 'A lista deveria conter o elemento 2.');
+assertion.assertEquals(false, listaDinamica.contem(6), 'A lista não deveria conter o elemento 6.');
 ```
 
 ### Solução
