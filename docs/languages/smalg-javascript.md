@@ -44,7 +44,7 @@ Para maior controle na definição dos cenários, são disponibilizados os segui
 | `context.getObjects()` | Retorna todos os objetos existentes no contexto. |
 | `context.getContainers()` | Retorna todos os containers existentes no contexto. |
 | `context.getPrimitives()` | Retorna todas as primitivas presentes no contexto. |
-| `context.clear(<elemento>)` | Sendo passado em elemento por parâmetro, realiza a limpeza do objeto visual. |
+| `context.clear(<elemento>)` | Sendo passado em elemento por parâmetro, realiza a limpeza do objeto visual. Este método é importante para otimizar a visualização de um cenário. Atualmente, não existe um garbage collector que realiza a limpeza automática dos elementos. |
 
 ## `assertion`
 

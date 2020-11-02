@@ -42,7 +42,7 @@ Nesta etapa é cadastrada a solução do problema. Ela também é importante par
 
 A classe gerada para implementação, se observada, seguirá as suas definições de contrato. A programação dela também é realizada através da [Smalg Javascript](/smalg-platform/languages/smalg-javascript).
 
-Após 
+Após concluir todos os processos, finalize a criação de problemas.
 
 ### Disponibilizando o problema
 
