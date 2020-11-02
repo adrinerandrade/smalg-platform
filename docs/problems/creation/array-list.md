@@ -25,7 +25,6 @@ Cole no editor de texto a **descrição** com os seguintes valores:
 No exemplo acima, foi primeiro contextualizado o problema, com uma explicação sobre o conteúdo e definido quais eram os objetivos da implementação. Essas etapas são interessantes para oferecer ao usuário um melhor entendimento sobre o assunto a ser abordado.
 
 Se você quiser, pode adicionar materiais complementares a partir de links externos, imagens e vídeos.
-
 `Dica: Apesar das imagens serem acessíveis apenas através de url, é possível hospedá-las em serviços presentes na Web como o Google Drive e One Drive.`
 
 Concluindo esta etapa, clique em **próximo**.
@@ -118,7 +117,6 @@ assertion.assertEquals(5, listaDinamica.obterTamanho(), 'O primeiro da lista dev
 assertion.assertEquals(1, containers[0].container[0], 'O primeiro elemento deveria ser 1.');
 assertion.assertEquals(2, containers[0].container[1], 'O segundo elemento deveria ser 2.');
 assertion.assertEquals(3, containers[0].container[2], 'O terceiro elemento deveria ser 3.');
-console.log(containers[0].container);
 assertion.assertEquals(5, containers[0].container[3], 'O quarto elemento deveria ser 5.');
 assertion.assertEquals(6, containers[0].container[4], 'O quinto elemento deveria ser 6.');
 ```
