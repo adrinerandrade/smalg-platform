@@ -8,6 +8,8 @@ A visualização de um problema é contruída com base na interação que se tem
 
 ### Elementos
 
+Os elementos do cenário são interativos, com exceção dos tipos primitivos.
+
 - Objetos: Representam uma estrutura que trabalha em cima de chave/valor.
 
 ![image](https://drive.google.com/u/0/uc?id=1G0VTm_wsSeSxle9P6rCsg6q-yPcM4JCf&export=download)

@@ -52,7 +52,7 @@ Se for de sua preferência, também é possível disponibilizar o problema atrav
 
 ### Exemplos
 
-A seguir temos os seguintes exemplos para demonstrar mais detalhadamente o processo de criação de um problema:
+A seguir temos os seguintes exemplos para demonstrar mais detalhadamente o processo de criação de um problema. Se esta é a primeira vez que você está criando um problema, recomendamos o problema para inversão de um container:
 
 * [Invertendo os elementos de um container](/smalg-platform/problems/creation/inverting-array)
 * [Ordenando uma lista com o método bolha (Bubble Sort)](/smalg-platform/problems/creation/bubble-sort)

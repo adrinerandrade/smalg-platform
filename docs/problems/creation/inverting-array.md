@@ -24,12 +24,16 @@ Cole no editor de texto a **descrição** com os seguintes valores:
 	Utilize os métodos get e set para trabalhar com o container.
 	```
 
+`Dica: Se você estiver usando Windows, você pode utilizar ctrl + shift + v para colar sem estilo.`
+
 No exemplo acima, foi primeiro contextualizado o problema, com uma explicação sobre o conteúdo e definido quais eram os objetivos da implementação. Essas etapas são interessantes para oferecer ao usuário um melhor entendimento sobre o assunto a ser abordado.
 
 Se você quiser, pode adicionar materiais complementares a partir de links externos, imagens e vídeos.
 `Dica: Apesar das imagens serem acessíveis apenas através de url, é possível hospedá-las em serviços presentes na Web como o Google Drive e One Drive.`
 
 Concluindo esta etapa, clique em **próximo**.
+
+![image](https://drive.google.com/u/0/uc?id=1afaWjTl8Q4I16YOo_8Tz5Vq7P5W-gSbS&export=download)
 
 ### Contrato
 
@@ -42,6 +46,8 @@ Não adicione nenhum campo e adicione o seguinte método:
 | `inverter` | `vetor` | `Recebe um container/vetor para ter os seus elementos invertidos` |
 
 Concluindo esta etapa, clique em **próximo**.
+
+![image](https://drive.google.com/u/0/uc?id=13A-ytFRE0roq-86DsS3MHti3JwoqYfut&export=download)
 
 ### Cenários
 
@@ -70,6 +76,8 @@ assertion.assertEquals(5, container.container[3], 'O quarto elemento está errad
 assertion.assertEquals(5, container.container[4], 'O quinto elemento está errado');
 ```
 
+![image](https://drive.google.com/u/0/uc?id=13A-ytFRE0roq-86DsS3MHti3JwoqYfut&export=download)
+
 ### Solução
 
 Como solução cadastre o seguinte código:
@@ -95,3 +103,11 @@ class ProblemaDeInversao {
 
 }
 ```
+
+![image](https://drive.google.com/u/0/uc?id=1kgpP1zp_z1PxzsdEwYaEaYTAXidd8CZD&export=download)
+
+Você pode clicar em executar o cenário para visualizar o resultado final, como mostra a imagem abaixo:
+
+![image](https://drive.google.com/u/0/uc?id=1kgpP1zp_z1PxzsdEwYaEaYTAXidd8CZD&export=download)
+
+Após esses passos crie o problema salvando na sua conta do github ou exportando para um arquivo.
