@@ -76,7 +76,7 @@ assertion.assertEquals(5, container.container[3], 'O quarto elemento está errad
 assertion.assertEquals(5, container.container[4], 'O quinto elemento está errado');
 ```
 
-![image](https://drive.google.com/u/0/uc?id=13A-ytFRE0roq-86DsS3MHti3JwoqYfut&export=download)
+![image](https://drive.google.com/u/0/uc?id=1eOlE7fX6OfZyxRJrU3TsYQGIQtVt2zW9&export=download)
 
 ### Solução
 
@@ -108,6 +108,6 @@ class ProblemaDeInversao {
 
 Você pode clicar em executar o cenário para visualizar o resultado final, como mostra a imagem abaixo:
 
-![image](https://drive.google.com/u/0/uc?id=1kgpP1zp_z1PxzsdEwYaEaYTAXidd8CZD&export=download)
+![image](https://drive.google.com/u/0/uc?id=1y7oVOq8WjJcnjKlM2BKU0mb6T26-OV-6&export=download)
 
 Após esses passos crie o problema salvando na sua conta do github ou exportando para um arquivo.
