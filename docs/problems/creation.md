@@ -57,4 +57,4 @@ A seguir temos os seguintes exemplos para demonstrar mais detalhadamente o proce
 * [Invertendo os elementos de um container](/smalg-platform/problems/creation/inverting-array)
 * [Ordenando uma lista com o método bolha (Bubble Sort)](/smalg-platform/problems/creation/bubble-sort)
 * [Criando uma lista encadeada](/smalg-platform/problems/creation/linked-list)
-* [Criando um problema: Lista Dinâmica (Array List)](/smalg-platform/problems/creation/array-list)
+* [Criando uma lista dinâmica (Array List)](/smalg-platform/problems/creation/array-list)

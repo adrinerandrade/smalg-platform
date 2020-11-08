@@ -39,6 +39,8 @@ Se você quiser, pode adicionar materiais complementares a partir de links exter
 
 Concluindo esta etapa, clique em **próximo**.
 
+![image](https://drive.google.com/u/0/uc?id=1lYdky7ApuaYnuwdoKuvON_MrYcSxgJ2X&export=download)
+
 ### Contrato
 
 Na etapa de defição do contrato, digite no campo **Nome** o seguinte valor: `ListaEncadeada`. Este valor estará disponível posteriormente na criação dos cenários pela variável `listaEncadeada`.
@@ -62,6 +64,8 @@ Após definir os campos, adicione os seguintes métodos:
 | `adicionar` | `elemento` | `Adiciona um elemento na lista.` |
 
 Concluindo esta etapa, clique em **próximo**.
+
+![image](https://drive.google.com/u/0/uc?id=15-1pz1B9hLM4kDzrJIHaIZbmWsNpcEhq&export=download)
 
 ### Cenários
 
@@ -154,6 +158,8 @@ listaEncadeada.adicionar(2);
 assertion.assertEquals(true, listaEncadeada.contem(1), 'A lista deveria conter o elemento 1.');
 assertion.assertEquals(false, listaEncadeada.contem(3), 'A lista não deveria conter o elemento 3');
 ```
+
+![image](https://drive.google.com/u/0/uc?id=1PqHWMOFsJVgiTy0tyze14aC0Yagejitd&export=download)
 
 ### Solução
 
@@ -248,4 +254,10 @@ class ListaEncadeada {
 }
 ```
 
-Pronto! Agora basta criar o problema para que ele seja publicado e consiga ser utilizado por outros usuários. Caso deseja conferir o exemplo de outros problemas, volte a [Home](/smalg-platform).
+![image](https://drive.google.com/u/0/uc?id=1HHYdwdIDFJ7f6upeatWcLhNxPq1_ZT5a&export=download)
+
+Você pode clicar em executar o cenário para visualizar o resultado final, como mostra a imagem abaixo:
+
+![image](https://drive.google.com/u/0/uc?id=1yLVa3gclQy20dS25iGuOQD-fGdoj1mGJ&export=download)
+
+Pronto! Agora basta criar o problema para que ele seja publicado e consiga ser utilizado por outros usuários.

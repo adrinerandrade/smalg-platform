@@ -23,7 +23,7 @@ Cole no editor de texto a **descrição** com os seguintes valores:
 
   Para realizar uma ordenação decrescente basta inverter a lógica.
 
-  Apesar do métood bolha ser amplamente conhecido no mundo da programação ele não é o método de ordenação mais efetivo. 
+  Apesar do método bolha ser amplamente conhecido no mundo da programação ele não é o método de ordenação mais efetivo. 
 	```
 
 No exemplo acima, foi primeiro contextualizado o problema, com uma explicação sobre o conteúdo e definido quais eram os objetivos da implementação. Essas etapas são interessantes para oferecer ao usuário um melhor entendimento sobre o assunto a ser abordado.
