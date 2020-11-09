@@ -31,7 +31,7 @@ Para criar um container/vetor, chame o método `context.newContainer(<tamanho>)`
 | `container.get(<indice>): <valor>` | Recupera um valor de um objeto a partir de uma chave. |
 | `container.size(): <tamanho>` | Recupera o tamanho definido inicialmente para o container. |
 
-#### Definição de cenários
+#### Definição de cenários (Não se aplica a execução)
 
 Na definição dos cenários, é possível acessar o array puro armazenado internamente, evitando assim a geração da animação para as assertivas a serem executadas nos cenários. Para isso, acesse a propriedade `<variavelContainer>.container`. O retorno será um array javascript puro.
 
