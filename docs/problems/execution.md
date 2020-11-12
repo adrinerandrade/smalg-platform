@@ -15,7 +15,7 @@ Já existem alguns problemas disponibilizados prontos para serem executados. Bas
 
 * [Problemas padrões](https://drive.google.com/u/0/uc?id=1CFxwdv5O5WyfH5pi7ITYr8sK-b3bOiej&export=download)
 
-### Executar
+### Escrevendo a solução
 
 Após selecionar o problema, você irá para a tela de execução do problema.
 
@@ -27,8 +27,14 @@ O botão de **Descrição do cenário** apresenta as características do cenári
 
 O botão de **Solução** apresentará a solução do problema.
 
-Os **botões de perspectiva**, localizados ao lado do botão de descrição e de solução permite que você altere o _layout_ para somente código, somente visualização e visualização e código. Eles serão úteis para quando você estiver codificando e executando o problema.
+Para programar, você usará a [Smalg Javascript](/smalg-platform/languages/smalg-javascript). Você terá uma classe com um contrato que deverá seguir para solucionar o problema. Seu trabalho é realizar a implementação.
 
-Para programar, você usará a [Smalg Javascript](/smalg-platform/languages/smalg-javascript). Implemente os métodos do contrato. Quando terminar, clique em **Executar**. Se seu código apresentar erros, a visualização irá ocorrer até o momento que houve o erro e uma caixa de diálogo será apresentada indicando a mensagem do erro.
+Quando terminar, clique em **Executar**. Se seu código apresentar erros, a visualização irá ocorrer até o momento que houve o erro e uma caixa de diálogo será apresentada indicando a mensagem do erro.
+
+### Executar
+
+Ao clicar em executar
+
+Os **botões de perspectiva**, localizados ao lado do botão de descrição e de solução permite que você altere o _layout_ para somente código, somente visualização e visualização e código. Eles serão úteis para quando você estiver codificando e executando o problema.
 
 Durante a execução será apresentada a visualização do problema. Para entender melhor, veja sobre [visualização](/smalg-platform/problems/visualization).
