@@ -33,7 +33,7 @@ Quando terminar, clique em **Executar**. Se seu código apresentar erros, a visu
 
 ### Executar
 
-Ao clicar em executar
+Ao clicar em executar será iniciada a visualização do seu código.
 
 Os **botões de perspectiva**, localizados ao lado do botão de descrição e de solução permite que você altere o _layout_ para somente código, somente visualização e visualização e código. Eles serão úteis para quando você estiver codificando e executando o problema.
 
